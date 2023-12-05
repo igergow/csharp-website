@@ -1,0 +1,31 @@
+/* C# Site Color Scheme in Light Mode */
+:root {
+  --ifm-color-primary: #283747; /* Dark Blue */
+  --ifm-color-primary-dark: #1F2C3A;
+  --ifm-color-primary-darker: #17212D;
+  --ifm-color-primary-darkest: #0F1620;
+  --ifm-color-primary-light: #324A5F;
+  --ifm-color-primary-lighter: #3C5C77;
+  --ifm-color-primary-lightest: #4C6D8F;
+  --ifm-color-inputs: #fff;
+  --ifm-color-inputs-text: #1b1b1d;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --github-logo: url(/img/login-transparent-invert.png);
+  --ifm-color-red: firebrick;
+}
+
+/* C# Site Color Scheme in Dark Mode */
+[data-theme='dark'] {
+  --ifm-color-primary: #5DADE2; /* Light Blue */
+  --ifm-color-primary-dark: #4FB3D2;
+  --ifm-color-primary-darker: #41A9C2;
+  --ifm-color-primary-darkest: #339FB2;
+  --ifm-color-primary-light: #6EB7E7;
+  --ifm-color-primary-lighter: #82C1EC;
+  --ifm-color-primary-lightest: #96CBF1;
+  --ifm-color-inputs: #1b1b1d;
+  --ifm-color-inputs-text: #fff;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --github-logo: url(/img/login-transparent.png);
+  --ifm-color-red: red;
+}

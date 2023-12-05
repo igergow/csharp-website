@@ -1,0 +1,45 @@
+{
+  "short_name": "C# Guide",
+  "name": "C# Programming Guide: Enhance Your Skills",
+  "icons": [
+    {
+      "src": "/img/logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/img/logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "id": "/lectures?source=pwa",
+  "start_url": "/lectures?source=pwa",
+  "background_color": "#68217a",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#68217a",
+  "shortcuts": [
+    {
+      "name": "Beginner's Guide",
+      "short_name": "Beginner",
+      "description": "Start your journey with C#",
+      "url": "/basics/00-intro?source=pwa",
+      "icons": [{ "src": "/img/logo.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Advanced Techniques",
+      "short_name": "Advanced",
+      "description": "Deep dive into advanced OOP C# topics",
+      "url": "/lectures?source=pwa",
+      "icons": [{ "src": "/img/logo.png", "sizes": "192x192" }]
+    }
+  ],
+  "description": "Comprehensive guide for C# Programming",
+  "screenshots": []
+}

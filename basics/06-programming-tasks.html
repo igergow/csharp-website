@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="bg" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-basics/6" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.0.0">
+<title data-rh="true">Практически задачи 2 | C# ООП</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://csharp.gh.igergov.com/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://csharp.gh.igergov.com/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://csharp.gh.igergov.com/basics/06-programming-tasks"><meta data-rh="true" property="og:locale" content="bg"><meta data-rh="true" name="docusaurus_locale" content="bg"><meta data-rh="true" name="docsearch:language" content="bg"><meta data-rh="true" name="keywords" content="csharp, oop, programming, software engineering, technical university, софия, университет, програмиране, обектно-ориентирано програмиране"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Практически задачи 2 | C# ООП"><meta data-rh="true" name="description" content="Разширете своите умения в C# с този пълен списък от 50 задачи, разработени да подобрят практическите знания от начинаещи до напреднали нива. Включете се с решаването на задачи за променливи, масиви, условни изрази и алгоритми, докато изградите основи и разработите собствени игри. Идеален за обучение в класната стая, самостоятелно учене или подготовка за изпити по програмиране."><meta data-rh="true" property="og:description" content="Разширете своите умения в C# с този пълен списък от 50 задачи, разработени да подобрят практическите знания от начинаещи до напреднали нива. Включете се с решаването на задачи за променливи, масиви, условни изрази и алгоритми, докато изградите основи и разработите собствени игри. Идеален за обучение в класната стая, самостоятелно учене или подготовка за изпити по програмиране."><link data-rh="true" rel="icon" href="/img/logo.png"><link data-rh="true" rel="canonical" href="https://csharp.gh.igergov.com/basics/06-programming-tasks"><link data-rh="true" rel="alternate" href="https://csharp.gh.igergov.com/basics/06-programming-tasks" hreflang="bg"><link data-rh="true" rel="alternate" href="https://csharp.gh.igergov.com/basics/06-programming-tasks" hreflang="x-default"><link rel="preconnect" href="https://www.googletagmanager.com">
+<script>window.dataLayer=window.dataLayer||[]</script>
+<script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-PJDPTJPD",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script>
+
+
+
+<link rel="icon" href="/img/logo.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="rgb(37, 194, 160)"><link rel="stylesheet" href="/assets/css/styles.3aa926bf.css">
+<script src="/assets/js/runtime~main.b2c138d4.js" defer="defer"></script>
+<script src="/assets/js/main.55cce9d7.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJDPTJPD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const a=new URLSearchParams(window.location.search).entries();for(var[t,e]of a)if(t.startsWith("docusaurus-data-")){var n=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(n,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div class="announcementBar_mb4j" style="background-color:white;color:var(--ifm-color-primary)" role="banner"><div class="announcementBarPlaceholder_vyr4"></div><div class="content_knG7 announcementBarContent_xLdY">🎉 Ново обновление! Проверете най-новите материали и уроци за C#, идeални за начинаещи и напреднали програмисти. Стартирайте своето обучение днес и задълбочете вашите знания в обектно-ориентираното програмиране! 💻✨</div><button type="button" aria-label="Close" class="clean-btn close closeButton_CVFx announcementBarClose_gvF7"><svg viewBox="0 0 15 15" width="14" height="14"><g stroke="currentColor" stroke-width="3.1"><path d="M.75.75l13.5 13.5M14.25.75L.75 14.25"></path></g></svg></button></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.png" alt="C# ООП Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.png" alt="C# ООП Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">C# ООП</b></a><a class="navbar__item navbar__link" href="/lectures">Лекции</a><a class="navbar__item navbar__link" href="/exercises">Упражнения</a><a class="navbar__item navbar__link navbar__button--highlighted" href="/basics/00-intro">IT Кариера</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/login/oauth/authorize?client_id=e2f874df2728f4d156ee&amp;allow_signup=true&amp;scope=user" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link header-github-link">Login<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG menuWithAnnouncementBar_GW3s"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/intro">Добре дошли</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item introduction"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" aria-expanded="true" href="/basics/00-intro">Въведение</a><button aria-label="Collapse sidebar category &#x27;Въведение&#x27;" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/basics/01-introduction">Въведение в програмирането</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/basics/02-conditionals">Условни конструкции</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/basics/03-conditional-exams">Практически задачи 1</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/basics/04-loops">Цикли</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/basics/05-how-to-build">Как да творим</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/basics/06-programming-tasks">Практически задачи 2</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed red"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/lectures">Лекции</a><button aria-label="Expand sidebar category &#x27;Лекции&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed red"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/exercises">Упражнения</a><button aria-label="Expand sidebar category &#x27;Упражнения&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed red"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/csharp-developments">C# Разработки</a><button aria-label="Expand sidebar category &#x27;C# Разработки&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/youtube-videos">Полезни Видеа</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/feedback">Обратна връзка</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/basics/00-intro"><span itemprop="name">Въведение</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Практически задачи 2</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Практически задачи 2</h1></header><div class="theme-admonition theme-admonition-danger admonition_xJq3 alert alert--danger"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>Важно</div><div class="admonitionContent_BuS1"><div class="language-csharp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-csharp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Console</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">WriteLine</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&quot;Задача 1.&quot;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">// Вашето решение тук</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Console</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">WriteLine</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&quot;Задача 2.&quot;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">// Вашето решение тук</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token range operator" style="color:#393A34">..</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">// т.н.</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="задачи-за-самоподготовка">Задачи за самоподготовка<a href="#задачи-за-самоподготовка" class="hash-link" aria-label="Direct link to Задачи за самоподготовка" title="Direct link to Задачи за самоподготовка">​</a></h2>
+<ol>
+<li>
+<p><strong>Hello World</strong></p>
+<p><strong>Задание:</strong> Изпишете на конзолата &quot;Hello, World!&quot;.</p>
+<p><em>Тази задача е въвеждаща в програмирането и цели да ви запознае с начина за изписване на текст на конзолата.</em></p>
+</li>
+<li>
+<p><strong>Поздрави потребителя</strong></p>
+<p><strong>Задание:</strong> Попитайте потребителя за името му и го поздравете по име.</p>
+<p><em>Целта на задачата е да се научите как да приемате вход от потребителя и да използвате входа за да изведете смислен изход.</em></p>
+</li>
+<li>
+<p><strong>Изписване на възраст</strong></p>
+<p><strong>Задание:</strong> Въведете и изведете възрастта на потребителя.</p>
+<p><em>Тази задача учи на основите на променливите и как да се съхраняват и извеждат данни от потребителя.</em></p>
+</li>
+<li>
+<p><strong>Конвертор на единици</strong></p>
+<p><strong>Задание:</strong> Преобразувайте въведени инчове в сантиметри.</p>
+<p><em>Тук целта е да се научите да извършвате прости аритметични преобразувания и конверсии на данни.</em></p>
+</li>
+<li>
+<p><strong>Проверка за четност</strong></p>
+<p><strong>Задание:</strong> Проверете дали въведено число е четно или нечетно.</p>
+<p><em>Задачата ви запознава с използването на условни оператори за проверка на свойст вата на числата.</em></p>
+</li>
+<li>
+<p><strong>Сума на числа</strong></p>
+<p><strong>Задание:</strong> Изведете сумата на две въведени числа.</p>
+<p><em>С тази задача ще практикувате простите математически операции и концепцията за изчисления в програмирането.</em></p>
+</li>
+<li>
+<p><strong>Площ на квадрат</strong></p>
+<p><strong>Задание:</strong> Въведете страна на квадрат и изведете неговата площ.</p>
+<p><em>Тази задача развива разбирането за математически формули и тяхната реализация в код.</em></p>
+</li>
+<li>
+<p><strong>Обем на сфера</strong></p>
+<p><strong>Задание:</strong> Въведете радиус и изчислете обема на сфера.</p>
+<p><em>Задачата включва работа с по-сложни математически изчисления и прилагане на формулата за обем на сфера.</em></p>
+</li>
+<li>
+<p><strong>Сравнение на числа</strong></p>
+<p><strong>Задание:</strong> Въведете две числа и изведете по-голямото от тях.</p>
+<p><em>Тук ще упражните използването на условни изрази за сравняване на числови стойности.</em></p>
+</li>
+<li>
+<p><strong>Проверка за триъгълник</strong></p>
+<p><strong>Задание:</strong> Въведете три числа и определете дали могат да образуват триъгълник.</p>
+<p><em>Тази задача ви учи как да прилагате математически и логически знания за решаване на конкретен проблем.</em></p>
+</li>
+<li>
+<p><strong>Класифика ция по оценка</strong></p>
+<p><strong>Задание:</strong> Въведете оценка и изведете дали тя е &quot;Отличен&quot;, &quot;Много добър&quot;, &quot;Добър&quot;, &quot;Среден&quot; или &quot;Слаб&quot;.</p>
+<p><em>Учи на използването на вложени условни конструкции за категоризация на данни.</em></p>
+</li>
+<li>
+<p><strong>Конвертиране на време</strong></p>
+<p><strong>Задание:</strong> Въведете време в часове и го конвертирайте в секунди.</p>
+<p><em>Практикувате преобразуването на единици и работата с числа.</em></p>
+</li>
+<li>
+<p><strong>Изброяване до N</strong></p>
+<p><strong>Задание:</strong> Изведете всички числа от 1 до въведено число N.</p>
+<p><em>Тази задача е подготовка за циклите, като изисква последователност и повторение.</em></p>
+</li>
+<li>
+<p><strong>ASCII стойност</strong></p>
+<p><strong>Задание:</strong> Въведете символ и изведете неговата ASCII стойност.</p>
+<p><em>Учи на работа със символни типове данни и тяхната числова репрезентация.</em></p>
+</li>
+<li>
+<p><strong>Квадратно уравнение</strong></p>
+<p><strong>Задание:</strong> Решете квадратно уравнение, като въведете стойностите на a, b и c.</p>
+<p><em>Развива уменията за алгебрични изчисления и логическо мислене.</em></p>
+</li>
+<li>
+<p><strong>Положително или отрицателно</strong></p>
+<p><strong>Задание:</strong> Проверете и изведете дали въведено число е положително, отрицателно или нула.</p>
+<p><em>Тази задача учи на разграничаване и използване на логически блокове.</em></p>
+</li>
+<li>
+<p><strong>Сезони</strong></p>
+<p><strong>Задание:</strong> Въведете месец по номер и изведете към кой сезон принадлежи.</p>
+<p><em>Упражнява използването на условни оператори за определяне на времеви периоди.</em></p>
+</li>
+<li>
+<p><strong>Обратен ред на число</strong></p>
+<p><strong>Задание:</strong> Изведете число в обратен ред (например от 123 да стане 321).</p>
+<p><em>Задачата включва логика за обработка на числа и тяхното преобразуване.</em></p>
+</li>
+<li>
+<p><strong>Температурен конвертор</strong></p>
+<p><strong>Задание:</strong> Въведете температура в Целзий и я конвертирайте във Фаренхайт.</p>
+<p><em>Тук се упражнявате в конверсиите и математическите операции.</em></p>
+</li>
+<li>
+<p><strong>Име с най-много букви</strong></p>
+<p><strong>Задание:</strong> Въведете списък с имена и изведете името с най-много букви.</p>
+<p><em>Целта е да се научите да работите със стрингове и да извършвате операции върху тях.</em></p>
+</li>
+<li>
+<p><strong>Брояч на думи</strong></p>
+<p><strong>Задание:</strong> Въведете текст и изведете броя на думите в текста.</p>
+<p><em>Тази задача помага на учениците да разберат как се обработва текст и как се използват стри нгове в програмирането.</em></p>
+</li>
+<li>
+<p><strong>Просто число</strong></p>
+<p><strong>Задание:</strong> Въведете число и проверете дали е просто.</p>
+<p><em>С това упражнение учениците практикуват разбирането за цикли и условия.</em></p>
+</li>
+<li>
+<p><strong>Ден от седмицата</strong></p>
+<p><strong>Задание:</strong> Въведете число за деня от седмицата и изведете неговото име на български.</p>
+<p><em>Тази задача учи на използване на свързани масиви или изброявания.</em></p>
+</li>
+<li>
+<p><strong>Факториел</strong></p>
+<p><strong>Задание:</strong> Въведете число и изведете факториела му.</p>
+<p><em>Задачата е въведение в понятието за рекурсия или итеративно изчисление.</em></p>
+</li>
+<li>
+<p><strong>Валидна дата</strong></p>
+<p><strong>Задание:</strong> Въведете ден, месец и година, и проверете дали образуват валидна дата.</p>
+<p><em>Подходяща за упражняване на комплексни условия и дата/време функции.</em></p>
+</li>
+<li>
+<p><strong>Честота на букви</strong></p>
+<p><strong>Задание:</strong> Въведете текст и изведете броя на срещанията на всяка буква.</p>
+<p><em>Учи на анализ на данни и съхранение на информация в масиви.</em></p>
+</li>
+<li>
+<p><strong>Минимум и максимум в масив</strong></p>
+<p><strong>Задание:</strong> Въведете масив от числа и изведете най-малкото и най-голямото от тях.</p>
+<p><em>Таз и задача е подходяща за упражняване на цикли и сравнения.</em></p>
+</li>
+<li>
+<p><strong>Сортиране на масив</strong></p>
+<p><strong>Задание:</strong> Въведете масив от числа и ги сортирайте във възходящ ред.</p>
+<p><em>Учи на алгоритми за сортиране и манипулация на данни.</em></p>
+</li>
+<li>
+<p><strong>Замяна на гласните</strong></p>
+<p><strong>Задание:</strong> Напишете програма, която заменя всички гласни букви в текст с символа &#x27;*&#x27;.</p>
+<p><em>Тази задача помага да се разбере обработката на стрингове и използването на цикли.</em></p>
+</li>
+<li>
+<p><strong>Сума на цифрите</strong></p>
+<p><strong>Задание:</strong> Въведете число и изведете сумата на цифрите му.</p>
+<p><em>Учи на обработка на числа и извличане на отделните им цифри.</em></p>
+</li>
+<li>
+<p><strong>Палиндром</strong></p>
+<p><strong>Задание:</strong> Въведете текст и проверете дали е палиндром (чете се еднакво в обратен ред).</p>
+<p><em>Това упражнение помага за разбирането на стринговите операции и сравнения.</em></p>
+</li>
+<li>
+<p><strong>Сигурна парола</strong></p>
+<p><strong>Задание:</strong> Напишете програма, която иска от потребителя да въведе сигурна парола, проверява я за определени критерии и приема въвеждането, когато те са изпълнени.</p>
+<p><em>Помага на учениците да разберат сложни условни из рази и валидация на данни.</em></p>
+</li>
+<li>
+<p><strong>Обратен масив</strong></p>
+<p><strong>Задание:</strong> Въведете масив от числа и ги изведете в обратен ред.</p>
+<p><em>Тази задача е полезна за упражняване на индексиране и работа с масиви.</em></p>
+</li>
+<li>
+<p><strong>Брой на елементите</strong></p>
+<p><strong>Задание:</strong> Въведете масив от думи и изведете колко пъти се среща всяка от тях.</p>
+<p><em>Упражнява търсенето и броенето на елементи в масив.</em></p>
+</li>
+<li>
+<p><strong>Прости числа</strong></p>
+<p><strong>Задание:</strong> Напишете програма, която извежда всички прости числа до N.</p>
+<p><em>Това упражнение въвежда в концепциите на ефективност и оптимизация на алгоритми.</em></p>
+</li>
+<li>
+<p><strong>Средна стойност</strong></p>
+<p><strong>Задание:</strong> Въведете масив от числа и изведете средната им стойност.</p>
+<p><em>Учи на сумиране и изчисляване на средни стойности.</em></p>
+</li>
+<li>
+<p><strong>Сортиране по дължина</strong></p>
+<p><strong>Задание:</strong> Въведете масив от думи и ги изведете сортирани по дължина.</p>
+<p><em>Подходящо за упражняване на алгоритми за сортиране.</em></p>
+</li>
+<li>
+<p><strong>Брояч на изречения</strong></p>
+<p><strong>Задание:</strong> Въведете текст и изведете броя на изреченията в текста.</p>
+<p><em>Помага на учениците да се научат да  анализират текст и да използват стрингове.</em></p>
+</li>
+<li>
+<p><strong>Числа на Фибоначи</strong></p>
+<p><strong>Задание:</strong> Въведете число N и изведете N-тото число от редицата на Фибоначи.</p>
+<p><em>Тази задача може да бъде решена с рекурсия или итеративни методи.</em></p>
+</li>
+<li>
+<p><strong>Намиране на медиан</strong></p>
+<p><strong>Задание:</strong> Въведете масив от числа и изведете техния медиан.</p>
+<p><em>Учи на обработка и анализ на статистически данни.</em></p>
+</li>
+<li>
+<p><strong>Графика на символи</strong></p>
+<p><strong>Задание:</strong> Въведете текст и изведете графика, показваща колко пъти се среща всеки символ в текста.</p>
+<p><em>Учи на анализ на текст и създаване на прости графични представяния на данни.</em></p>
+</li>
+<li>
+<p><strong>Транспониране на матрица</strong></p>
+<p><strong>Задание:</strong> Напишете програма, която въвежда матрица от числа и извежда нейния транспониран вариант.</p>
+<p><em>Тази задача развива уменията за работа с двумерни масиви и концепцията за транспониране.</em></p>
+</li>
+<li>
+<p><strong>Пътища в лабиринт</strong></p>
+<p><strong>Задание:</strong> Създайте матрица, представляваща лабиринт, и намерете броя на всички възможни пътища от горния ляв до долния десен ъгъл, избягвайки &quot;стените&quot;.</p>
+<p><em>Изисква логическо мислене и планиране на път в двумерно пространство.</em></p>
+</li>
+<li>
+<p><strong>Статистика на оценките</strong></p>
+<p><strong>Задание:</strong> Въведете списък от оценки и изведете статистика за разпределението им (например, броят на отличните, много добрите и т.н.).</p>
+<p><em>Учи на събиране на данни и анализ на резултати.</em></p>
+</li>
+<li>
+<p><strong>Римски цифри</strong></p>
+<p><strong>Задание:</strong> Напишете програма, която конвертира въведено число в римски цифри.</p>
+<p><em>Помага на учениците да се научат на работа със сложни условни конструкции и мапинг на стойности.</em></p>
+</li>
+<li>
+<p><strong>Симулация на монета</strong></p>
+<p><strong>Задание:</strong> Напишете програма, която симулира хвърляне на монета N пъти и извежда статистика за резултатите (колко пъти е изпаднало &#x27;орел&#x27; и &#x27;писмо&#x27;).</p>
+<p><em>Това упражнение въвежда в използването на случайни числа и статистически изчисления.</em></p>
+</li>
+<li>
+<p><strong>Симетричен масив</strong></p>
+<p><strong>Задание:</strong> Въведете масив от числа и проверете дали масивът е симетричен (палиндромен).</p>
+<p><em>Учи на анализ на масиви и въведение в концепцията за симетрия в данните.</em></p>
+</li>
+<li>
+<p><strong>Балансирани скоби</strong></p>
+<p><strong>Задание:</strong> Напишете програма, която проверява дали въведен текст има балансирани скоби (всяка отваряща скоба да има своята затваряща).</p>
+<p><em>Учи на използването на стек и проверка на балансираност на структури.</em></p>
+</li>
+<li>
+<p><strong>Последователност от еднакви елементи</strong></p>
+<p><strong>Задание:</strong> Напишете програма, която намира и извежда най-дългата последователност от еднакви елементи в масив.</p>
+<p><em>Развива уменията за работа с масиви и извършване на последователни сравнения.</em></p>
+</li>
+<li>
+<p><strong>Най-кратък път в матрица</strong></p>
+<p><strong>Задание:</strong> Напишете програма, която намира най-краткия път между две точки в матрица, като може да се движи само нагоре, надолу, наляво и надясно.</p>
+<p><em>Тази задача учи на алгоритми за търсене на път и е добро въведение в графовите структури.</em></p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="идея-1-игра-намери-съкровището">Идея 1: Игра &quot;Намери Съкровището&quot;<a href="#идея-1-игра-намери-съкровището" class="hash-link" aria-label="Direct link to Идея 1: Игра &quot;Намери Съкровището&quot;" title="Direct link to Идея 1: Игра &quot;Намери Съкровището&quot;">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="описание">Описание:<a href="#описание" class="hash-link" aria-label="Direct link to Описание:" title="Direct link to Описание:">​</a></h3>
+<p>В тази игра, играчът трябва да намери съкровище на карта, която е представена като мрежа от квадрати. Всеки квадрат може да бъде или част от пътя, или препятствие, или съкровището. Играчът започва от горния ляв ъгъл на картата и може да се движи нагоре, надолу, наляво и надясно.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="инструкции-за-разработка">Инструкции за Разработка:<a href="#инструкции-за-разработка" class="hash-link" aria-label="Direct link to Инструкции за Разработка:" title="Direct link to Инструкции за Разработка:">​</a></h3>
+<ol>
+<li><strong>Създайте Мрежа:</strong> Дефинирайте двумерен масив, който ще представлява картата.</li>
+<li><strong>Инициализирайте Елементите на Картата:</strong> Задайте различни стойности за пътя, препятствията и съкровището.</li>
+<li><strong>Начална Позиция:</strong> Поставете играча в началната позиция.</li>
+<li><strong>Вход от Играча:</strong> Позволете на играча да въвежда команди за движение.</li>
+<li><strong>Логика за Движение:</strong> Актуализирайте позицията на играча според въведените команди и проверете дали новата позиция не е препятствие.</li>
+<li><strong>Победа:</strong> Проверявайте дали играчът е стигнал до съкровището и ако е така, обявете победа.</li>
+<li><strong>Графика (опционално):</strong> Използвайте прости символи за визуализация на картата в конзолата.</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="идея-2-игра-познай-числото">Идея 2: Игра &quot;Познай Числото&quot;<a href="#идея-2-игра-познай-числото" class="hash-link" aria-label="Direct link to Идея 2: Игра &quot;Познай Числото&quot;" title="Direct link to Идея 2: Игра &quot;Познай Числото&quot;">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="описание-1">Описание:<a href="#описание-1" class="hash-link" aria-label="Direct link to Описание:" title="Direct link to Описание:">​</a></h3>
+<p>В тази игра компютърът генерира случайно число между 1 и 100, а играчът трябва да го познае. След всяка опит, играчът получава обратна връзка дали търсеното число е по-високо или по-ниско от предположението му.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="инструкции-за-разработка-1">Инструкции за Разработка:<a href="#инструкции-за-разработка-1" class="hash-link" aria-label="Direct link to Инструкции за Разработка:" title="Direct link to Инструкции за Разработка:">​</a></h3>
+<ol>
+<li><strong>Генериране на Случайно Число:</strong> Използвайте вградена функция, за да генерирате случайно число.</li>
+<li><strong>Получаване на Вход от Играча:</strong> Запитайте играча да въведе своето първо предположение.</li>
+<li><strong>Логика за Проверка:</strong> Сравнете въведеното число с тайното число и дайте подходяща обратна връзка.</li>
+<li><strong>Брояч на Опитите:</strong> Проследявайте броя на опитите и изведете ги на играча след всяко предположение.</li>
+<li><strong>Край на Играта:</strong> Дайте възможност на играча да продължи с опитите, докато не познае числото, или да прекрати играта, ако желае.</li>
+<li><strong>Обратна Връзка при Победа:</strong> Когато играчът познае числото, покажете съобщение за победа и броя на направените опити.</li>
+</ol></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="theme-doc-footer-tags-row row margin-bottom--sm"><div class="col"><b>Tags:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/tags/задача">задача</a></li><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/tags/основи">основи</a></li><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/tags/цикли">цикли</a></li><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/tags/игра">игра</a></li></ul></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/basics/05-how-to-build"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Как да творим</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/lectures"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Лекции</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#задачи-за-самоподготовка" class="table-of-contents__link toc-highlight">Задачи за самоподготовка</a></li><li><a href="#идея-1-игра-намери-съкровището" class="table-of-contents__link toc-highlight">Идея 1: Игра &quot;Намери Съкровището&quot;</a><ul><li><a href="#описание" class="table-of-contents__link toc-highlight">Описание:</a></li><li><a href="#инструкции-за-разработка" class="table-of-contents__link toc-highlight">Инструкции за Разработка:</a></li></ul></li><li><a href="#идея-2-игра-познай-числото" class="table-of-contents__link toc-highlight">Идея 2: Игра &quot;Познай Числото&quot;</a><ul><li><a href="#описание-1" class="table-of-contents__link toc-highlight">Описание:</a></li><li><a href="#инструкции-за-разработка-1" class="table-of-contents__link toc-highlight">Инструкции за Разработка:</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__links text--center"><div class="footer__links"><a href="https://www.patreon.com/csharpwithivo" target="_blank" rel="noopener noreferrer" class="footer__link-item">Подкрепете ме в Patreon<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 Ivo Gergov, Inc. Built with Skills.</div></div></div></footer><button class="terminal-btn">🥷</button></div>
+</body>
+</html>
